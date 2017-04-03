@@ -50,5 +50,12 @@ namespace MyTestProject.Tests.Controllers
             // Assert
             Assert.IsNotNull(result);
         }
+
+        [Test]
+        public void Test33()
+        {
+            Assert.AreEqual(1, 33);
+        }
+
     }
 }
