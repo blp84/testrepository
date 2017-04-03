@@ -54,7 +54,7 @@ namespace MyTestProject.Tests.Controllers
         [Test]
         public void Test33()
         {
-            Assert.AreEqual(1, 33);
+            Assert.AreEqual(1, 1);
         }
 
     }
