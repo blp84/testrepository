@@ -12,7 +12,13 @@ namespace MyTestProject.Tests.Selenium
     {
         public IWebDriver Create()
         {
-            var driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub/"), new DesiredCapabilities("internet explorer", string.Empty, new Platform(PlatformType.Windows)));
+            var desiredCapabilities = new DesiredCapabilities("internet explorer", string.Empty, new Platform(PlatformType.Windows));
+            desiredCapabilities.SetCapability("enablePersistentHover", false);
+            desiredCapabilities.SetCapability("ensureCleanSession", true);
+            desiredCapabilities.SetCapability("ignoreProtectedModeSettings", true);
+            desiredCapabilities.SetCapability("enableElementCacheCleanup", false);
+
+            var driver = new RemoteWebDriver(new Uri("http://localhost:4444/wd/hub/"), desiredCapabilities);
             driver.Manage().Window.Maximize();
             return driver;
         }
