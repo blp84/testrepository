@@ -25,7 +25,7 @@ namespace MyTestProject.Tests.Selenium
 
             wait.Until(ExpectedConditions.UrlToBe("http://localhost:62847/Home/About"));
 
-            Assert.That("Use this area to provide additional information1.", Is.EqualTo(webDriver.FindElement(By.Id("text1")).Text));
+            Assert.That("Use this area to provide additional information.", Is.EqualTo(webDriver.FindElement(By.Id("text1")).Text));
         }
     }
 }
