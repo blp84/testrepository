@@ -200,9 +200,6 @@
     <Folder Include="Pre-Deployment\" />
     <Folder Include="Migrations\" />
     <Folder Include="Post-Deployment\" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
-    <Folder Include="dbo\Views\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
@@ -220,11 +217,6 @@
     <None Include="Migrations\0003_20170407-1256_blaz.paradiz.sql" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\dbo.User.sql" />
-    <None Include="dbo\Tables\dbo.Folder.sql" />
-    <None Include="dbo\Tables\dbo.Department.sql" />
-    <Build Include="dbo\Tables\dbo.__MigrationLog.sql" />
-    <Build Include="dbo\Views\dbo.__MigrationLogCurrent.sql" />
     <None Include="Migrations\0004_20170407-1444_blaz.paradiz.sql" />
   </ItemGroup>
 </Project>
